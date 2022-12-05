@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the docker image
-      run: docker build . --file Dockerfile --tag githubaction:$(date +%s)
+      run: docker build . --file Dockerfile.ci --tag githubaction:$(date +%s)
