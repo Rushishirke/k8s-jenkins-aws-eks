@@ -36,8 +36,8 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: rushikesh8284/githubaction
-        tags: v1, latest
-        registry: registry-url.io
-        dockerfile: Dockerfile
+        tags:latest
+        registry: registry.io
+        dockerfile: Dockerfile.ci
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
